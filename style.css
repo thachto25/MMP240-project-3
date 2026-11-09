@@ -19,6 +19,7 @@ figure {
   margin: 0;
 }
 
+
 /* ----------------Video Wrapper------------------ */
 
 .videoWrapper {
@@ -54,23 +55,21 @@ figure {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid var(--alternate-background);
-  border-radius: 6px;
+  border-radius: var(--space-2);
 }
 
 /* ----------------Landmark Cards------------------ */
 .landmarks-grid {
   display: grid;
-  grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-3);
 }
 
 .featured-landmark {
   background-color: var(--alternate-background);
   color: var(--alternate-text);
   padding: var(--space-6);
-  border: 2px solid var(--alternate-background);
-  border-radius: 6px;
+  border-radius: var(--space-2);
 }
 
 .card {
@@ -78,8 +77,8 @@ figure {
   flex-direction: column;
   gap: var(--space-1);
   background-color: var(--alternate-background);
-  border: 2px solid var(--alternate-background);
-  border-radius: 6px;
+  border: 1px solid var(--alternate-background);
+  border-radius: var(--space-2);
   overflow: hidden;
 }
 
@@ -100,12 +99,8 @@ figure {
   left: var(--space-1);
   background-color: var(--primary-background);
   padding: var(--space-1) var(--space-2);
-  border-radius: 2px;
+  border-radius: var(--space-1);
   font-size: var(--text-size-sm);
-}
-
-figcaption a {
-  color: var(--action);
 }
 
 .card-title {
@@ -113,3 +108,243 @@ figcaption a {
   padding: var(--space-2) var(--space-2);
   font-size: var(--text-size-md);
 }
+
+/* ======================
+Media Queries
+========================= */
+@media (min-width: 600px) {
+  /* this applies to mobile in landscape and some tablets in portrait */
+
+
+}/*   end min-width 600 */
+
+
+@media (min-width: 900px) {
+  /* this applies to tablets */
+
+  .introduction {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    gap: var(--space-6);
+  }
+
+  .intro-title{
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: var(--space-3);
+}
+
+}/*   end min-width 900 */
+
+
+@media (min-width: 1200px) {
+  /* this applies average laptops */
+
+
+  .introduction {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-6);
+  }
+
+  .intro-title{
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+}/*   end min-width 1200 */
+
+
+@media (min-width: 1800px) {
+  /* this applies to very large screens */
+
+}
+
+/*   end min-width 1800 */
+
+
+/* =========================
+Individual Landmark Page
+============================ */
+
+.landmark-intro {
+  background-color: var(--alternate-background);
+  padding: var(--space-6);
+  border-radius: var(--space-2);
+}
+
+.hero-heading,
+.hero-desc {
+  color: var(--alternate-text);
+  margin: var(--space-3) 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.landmark-intro .hero-image {
+  position: relative;
+}
+
+.landmark-intro figcaption {
+  position: absolute;
+  bottom: var(--space-1);
+  left: var(--space-1);
+  background-color: var(--primary-background);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--space-1);
+  font-size: var(--text-size-sm);
+  color: var(--action);
+}
+
+
+/* ==========================
+Landmark About
+=============================*/
+.landmark-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-2);
+}
+
+.landmark-about,
+.landmark-directions {
+  padding: var(--space-6);
+}
+
+
+.landmark-directions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.landmark-directions li a {
+  text-decoration: none;
+}
+
+.directory-button {
+  display: flex;
+  flex-flow: column wrap;
+  margin: var(--space-3) 0;
+  border-radius: var(--space-6);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--action);
+  color: var(--button-text);
+  text-align: center;
+  font-size: var(--text-size-sm);
+}
+
+.mapWrapper {
+  position: relative;
+  padding-top: 25px;
+  height: 0;
+  clear: both;
+}
+
+.mapWrapper.ratio-16-9 {
+  padding-bottom: 56.25%;
+}
+
+.mapWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===================
+Gallery
+======================*/
+
+.gallery-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+
+.gallery-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.more-landmark-photos .gallery-photo {
+  position: relative;
+}
+
+.more-landmark-photos figcaption {
+  position: absolute;
+  bottom: var(--space-1);
+  left: var(--space-1);
+  background-color: var(--primary-background);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--space-1);
+  font-size: var(--text-size-sm);
+  color: var(--action);
+}
+
+/* ===================
+Page Navigation
+====================== */
+
+#pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--space-2);
+}
+
+.btn {
+  padding: var(--space-3);
+  border-radius: var(--space-2);
+  background-color: var(--action);
+  color: var(--button-text);
+  font-size: var(--text-size-sm);
+  text-decoration: none;
+}
+
+/* =============
+Quicklink btn
+=============== */
+.introduction {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.intro-text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-text li a {
+  text-decoration: none;
+}
+
+.quicklink-button{
+  display: block;
+  border-radius: var(--space-6);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--action);
+  text-align: center;
+  font-size: var(--text-size-sm);
+  color: var(--button-text);
+}
+
+.intro-text{
+  display: flex;
+  flex-direction: column;
+}
+
+/* pushing btn to the bottom  */
+.intro-text .intro{
+  flex-grow: 2;
+}
+

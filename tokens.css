@@ -164,8 +164,9 @@ a {
   text-underline-offset: 0.15em;
 }
 
-a:hover {
-  color: var(--action-hover);
+a:hover, a:active {
+  background-color: var(--alternate-action-hover);
+  color: var(--alternate-button-text); 
 }
 
 button, .button {
@@ -185,7 +186,6 @@ button:hover, .button:hover {
 }
 
 a:focus-visible, button:focus-visible {
-  outline: 3px solid currentColor;
-  outline-offset: 6px;
-}
+  outline: 2px solid var(--alternate-action);
+} 
 
