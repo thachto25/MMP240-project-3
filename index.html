@@ -10,8 +10,27 @@
 </head>
 
 <body>
-    <header>
-        <div class="site-title">NYC Landmarks</div>
+    <header id="navbar">
+        <div class="navigation-bar">
+            <div class="site-title">
+                <a href="index.html" class="logo">NYC Landmarks</a>
+                <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false"
+                    aria-label="Toggle menu">
+                    <span class="menu-button-text"></span>
+                </button>
+            </div>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-wonder.html">Wonder Wheel</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -24,14 +43,19 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="intro-text">
-                <p class="intro">This site highlights some interesting landmarks across New York
+                <p class="intro"> This site highlights some interesting landmarks across New York
                     City's five boroughs.</p>
-                <p class="intro">New York City is filled with landmarks, tourist attractions and historic sites dating
+                <p class="intro">
+                    New York City is filled with landmarks, tourist attractions and historic sites dating
                     from before it
-                    was known as New York City to more recent additions. <strong>Click through this site to
-                        explore!</strong></p>
+                    was known as New York City to more recent additions.
+                    <br>
+                </p>
+                <p class="intro"><strong>Click through this site to explore!</strong></p>
                 <ul>
-                    <li><a class="quicklink-button" href="#gallery">NYC Landmarks</a></li>
+                    <li>
+                        <a class="quicklink-button" href="#gallery">NYC Landmarks</a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -60,70 +84,85 @@
                     <figure class="card-image">
                         <img src="images/squares/pexels-kelsey-caroline-774981359-19122990_square.jpg"
                             alt="Wonder Wheel ferris wheel at Coney Island">
-                        <figcaption><a href="images/squares/pexels-kelsey-caroline-774981359-19122990_square.jpg">Photo
-                                by
+                        <figcaption><a
+                                href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by
                                 Kelsey Caroline</a></figcaption>
                     </figure>
-                    <h3 class="card-title">Wonder Wheel</h3>
+                    <h3 class="card-title"><a class="hyperlink" href="landmark-wonder.html">Wonder Wheel</a></h3>
                 </div>
                 <div class="card">
                     <figure class="card-image">
                         <img src="images/squares/pexels-loquellano-12404963_square.jpg"
                             alt="Roosevelt Island Tramway leaving Manhattan">
-                        <figcaption><a href="images/squares/pexels-loquellano-12404963_square.jpg">Photo by Raphael
+                        <figcaption><a href="https://www.pexels.com/photo/cable-car-above-city-street-12404963/">Photo
+                                by Raphael
                                 Loquellano</a></figcaption>
                     </figure>
-                    <h3 class="card-title">Roosevelt Island Tramway</h3>
+                    <h3 class="card-title"><a class="hyperlink" href="landmark-tram.html">Roosevelt Island Tramway</a>
+                    </h3>
                 </div>
                 <div class="card">
                     <figure class="card-image">
                         <img src="images/squares/pexels-malcolmhill-12360516_square.jpg"
                             alt="Yankee Stadium seen from the water with stadium title visible">
-                        <figcaption><a href="images/squares/pexels-malcolmhill-12360516_square.jpg">Photo by Malcolm
+                        <figcaption><a
+                                href="https://www.pexels.com/photo/yankee-stadium-under-the-blue-sky-12360516/">Photo by
+                                Malcolm
                                 Hill</a>
                         </figcaption>
                     </figure>
-                    <h3 class="card-title">Yankee Stadium</h3>
+                    <h3 class="card-title"><a class="hyperlink" href="landmark-yankee.html">Yankee Stadium</a></h3>
                 </div>
                 <div class="card">
                     <figure class="card-image">
                         <img src="images/squares/pexels-mora-versio-2150673251-34091093_square.jpg"
                             alt="Statue of Liberty from below looking up at it">
-                        <figcaption><a href="images/squares/pexels-mora-versio-2150673251-34091093_square.jpg">Photo by
+                        <figcaption><a
+                                href="https://www.pexels.com/photo/statue-of-liberty-in-new-york-city-usa-34091093/">Photo
+                                by
                                 Mora
                                 Versio</a></figcaption>
                     </figure>
-                    <h3 class="card-title">Statue of Liberty</h3>
+                    <h3 class="card-title"><a class="hyperlink" href="landmark-liberty.html">Statue of Liberty</a></h3>
                 </div>
                 <div class="card">
                     <figure class="card-image">
                         <img src="images/squares/pexels-tracehudson-2424391_square.jpg"
                             alt="Empire State Building with lower Manhattan in the background">
-                        <figcaption><a href="images/squares/pexels-tracehudson-2424391_square.jpg">Photo by Trace
+                        <figcaption><a href="https://www.pexels.com/photo/empire-state-building-2424391/">Photo by Trace
                                 Hudson</a>
                         </figcaption>
                     </figure>
-                    <h3 class="card-title">Empire State Building</h3>
+                    <h3 class="card-title"><a class="hyperlink" href="landmark-empire.html">Empire State Building</a>
+                    </h3>
                 </div>
                 <div class="card">
                     <figure class="card-image">
                         <img src="images/squares/praswin-prakashan-YOCN1a1m_dg-unsplash_square.jpg"
                             alt="Staten Island Ferry pulling into the dock">
-                        <figcaption><a href="images/squares/praswin-prakashan-YOCN1a1m_dg-unsplash_square.jpg">Photo by
+                        <figcaption><a
+                                href="https://unsplash.com/photos/a-large-ferry-boat-in-a-body-of-water-YOCN1a1m_dg">Photo
+                                by
                                 Praswin
                                 Prakashan</a>
                         </figcaption>
                     </figure>
-                    <h3 class="card-title">Staten Island Ferry</h3>
+                    <h3 class="card-title"><a class="hyperlink" href="landmark-ferry.html">Staten Island Ferry</a></h3>
                 </div>
             </div>
         </section>
+
+        <nav id="pagination" class="home-btn" aria-label="Landmark navigation">
+            <a class="btn" rel="next" href="landmark-wonder.html">Next →</a>
+        </nav>
     </main>
+
 
     <footer>
         <p>Site by Thach To</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
