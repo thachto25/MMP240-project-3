@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yankee Stadium</title>
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+         <header id="navbar">
+        <div class="navigation-bar">
+            <div class="site-title">
+                <a href="index.html" class="logo">NYC Landmarks</a>
+                <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="menu-button-text"></span>
+                </button>
+            </div>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-wonder.html">Wonder Wheel</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-yankee.html" aria-current="page">Yankee Stadium</a></li>
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landmark-intro">
+            <h1 class="hero-heading">Yankee Stadium</h1>
+            <figure class="hero-image">
+                <picture>
+                    <source media="(min-width: 645px)" srcset="images/pexels-malcolmhill-12360516.jpg">
+                    <source media="(max-width: 644px)" srcset="images/squares/pexels-malcolmhill-12360516_square.jpg">
+                    <img src="images/pexels-malcolmhill-12360516.jpg"
+                        alt="Yankee Stadium seen from the water with stadium title visible">
+                </picture>
+                <figcaption>
+                    <a href="https://www.pexels.com/photo/yankee-stadium-under-the-blue-sky-12360516/">Photo by
+                        Malcolm Hill</a>
+                </figcaption>
+            </figure>
+            <div class="hero-desc">
+                <p class="tagline">Yankee Stadium, located in the Bronx, is the home field of the New York Yankees
+                    baseball team and New York City FC soccer team.</p>
+            </div>
+        </section>
+
+        <div class="landmark-content">
+            <section class="landmark-about">
+                <h2>About</h2>
+                <p>
+                    <strong>Built:</strong>
+                    <br>
+                    Originally opened in April 1923, the stadium became legendary for baseball milestones, World Series
+                    games, and other major events in American sports history. It served as the home field of the New
+                    York Yankees for generations and was known as “The House That Ruth Built” after Babe Ruth, a famous
+                    Yankee player.
+                </p>
+                <p>
+                    <strong>Today:</strong>
+                    <br>
+                    The original stadium was replaced in 2009 by a new stadium of the same name that paid homage to the
+                    original in many of its design elements. The new 46,543 seat stadium mimics the old stadium both in
+                    the exterior design and the playing field while adding modern amenities.
+                </p>
+                <div>
+                    <h3>More Info</h3>
+                    <ul>
+                        <li><a href="https://www.britannica.com/place/Yankee-Stadium" target="_blank"
+                                rel="noopener">Britannica: Yankee Stadium History</a></li>
+                        <li><a href="https://www.mlb.com/yankees/ballpark/information" target="_blank"
+                                rel="noopener">Yankee Stadium Reference Guide</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Yankee_Stadium" target="_blank"
+                                rel="noopener">Wikipedia: Yankee Stadium</a></li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="landmark-directions">
+                <h3 id="directions-title">Get Directions</h3>
+                <p>Go to 1 East 161st Street in the Bronx. Check your ticket for the correct entrance.</p>
+                <div class="mapWrapper ratio-16-9">
+                    <iframe title="Google Maps directions to Yankee Stadium"
+                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d12075.691374202526!2d-73.93645278863536!3d40.82965838011247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x89c2f42c5ae76971%3A0x4940c3d9559a1e08!2sYankee%20Stadium%2C%201%20E%20161st%20St%2C%20Bronx%2C%20NY%2010451!3m2!1d40.8296426!2d-73.9261745!5e0!3m2!1sen!2sus!4v1794720625982!5m2!1sen!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <ul>
+                    <li>
+                        <a class="directory-button"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Yankee%20Stadium%2C%201%20East%20161st%20Street%2C%20Bronx%2C%20NY%2010451">Open
+                            in Google Maps</a>
+                    </li>
+                    <li>
+                        <a class="directory-button"
+                            href="https://maps.apple.com/directions?destination=Yankee%20Stadium%2C%201%20East%20161st%20Street%2C%20Bronx%2C%20NY%2010451">Open
+                            in Apple Maps</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- // No additional images are available for this landmark //  -->
+        <!-- <section class="more-landmark-photos">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-kyle-miller-169884138-27462439_square.jpg"
+                            alt="A man walking away from the wonder wheel which is in full view.">
+                        <figcaption>
+                            <a href="https://www.pexels.com/photo/a-man-walking-past-a-ferris-wheel-27462439/">Photo
+                                by Kyle Miller
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-clement-proust-363898785-24730360_square.jpg"
+                            alt="Wonder wheel at sunset">
+                        <figcaption><a
+                                href="https://www.pexels.com/photo/denos-wonder-wheel-amusement-park-24730360/">Photo
+                                by Clément Proust</a></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-dimitry-mak-1310041547-30911091_square.jpg"
+                            alt="Night view of the Wonder Wheel lit with neon">
+                        <figcaption>
+                            <a
+                                href="https://www.pexels.com/photo/colorful-summer-day-at-coney-island-amusement-park-30911091/">Photo
+                                by Dimitry Mak
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section> -->
+
+        <nav id="pagination" aria-label="Landmark navigation">
+            <a class="btn" rel="prev" href="landmark-tram.html">← Previous</a>
+            <a class="btn" rel="next" href="landmark-liberty.html">Next →</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Site by Thach To</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -10,18 +10,43 @@
 </head>
 
 <body>
-    <header>
-        <div class="site-title">NYC Landmarks</div>
+     <header id="navbar">
+        <div class="navigation-bar">
+            <div class="site-title">
+                <a href="index.html" class="logo">NYC Landmarks</a>
+                <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="menu-button-text"></span>
+                </button>
+            </div>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-wonder.html" aria-current="page">Wonder Wheel</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section class="landmark-intro">
             <h1 class="hero-heading">Wonder Wheel</h1>
             <figure class="hero-image">
-                <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg"
-                    alt="Wonder Wheel entrance on a cloudless sunny day">
-                <figcaption><a href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by
-                        Kelsey Caroline</a></figcaption>
+                <picture>
+                    <source media="(min-width: 645px)" srcset="images/pexels-kelsey-caroline-774981359-19122990.jpg">
+                    <source media="(max-width: 644px)"
+                        srcset="images/squares/pexels-kelsey-caroline-774981359-19122990_square.jpg">
+                    <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg"
+                        alt="Wonder Wheel ferris wheel at Coney Island">
+                </picture>
+                 <figcaption>
+                    <a href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by
+                        Kelsey Caroline</a>
+                </figcaption>
             </figure>
             <div class="hero-desc">
                 <p class="tagline">A century-old Ferris wheel that still lights up the Coney Island skyline.</p>
@@ -96,9 +121,12 @@
                     <figure class="gallery-photo">
                         <img src="images/squares/pexels-kyle-miller-169884138-27462439_square.jpg"
                             alt="A man walking away from the wonder wheel which is in full view.">
-                        <figcaption><a
+                        <figcaption>
+                            <a
                                 href="https://www.pexels.com/photo/a-man-walking-past-a-ferris-wheel-27462439/">Photo
-                                by Kyle Miller</a></figcaption>
+                                by Kyle Miller
+                            </a>
+                        </figcaption>
                     </figure>
                 </div>
                 <div>
@@ -114,17 +142,20 @@
                     <figure class="gallery-photo">
                         <img src="images/squares/pexels-dimitry-mak-1310041547-30911091_square.jpg"
                             alt="Night view of the Wonder Wheel lit with neon">
-                        <figcaption><a
+                        <figcaption>
+                            <a
                                 href="https://www.pexels.com/photo/colorful-summer-day-at-coney-island-amusement-park-30911091/">Photo
-                                by Dimitry Mak</a></figcaption>
+                                by Dimitry Mak
+                            </a>
+                        </figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
         <nav id="pagination" aria-label="Landmark navigation">
-            <a class="btn" rel="prev" href="landmark-tram.html">← Previous</a>
-            <a class="btn" rel="next" href="landmark-liberty.html">Next →</a>
+            <a class="btn" rel="prev" href="index.html">← Previous</a>
+            <a class="btn" rel="next" href="landmark-tram.html">Next →</a>
         </nav>
     </main>
 
@@ -132,6 +163,7 @@
         <p>Site by Thach To</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>

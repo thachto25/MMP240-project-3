@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire State Building</title>
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="navigation-bar">
+            <div class="site-title">
+                <a href="index.html" class="logo">NYC Landmarks</a>
+                <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="menu-button-text"></span>
+                </button>
+            </div>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-wonder.html">Wonder Wheel</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html" aria-current="page">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landmark-intro">
+            <h1 class="hero-heading">Empire State Building</h1>
+            <figure class="hero-image">
+                <picture>
+                    <source media="(min-width: 645px)" srcset="images/pexels-tracehudson-2424391.jpg">
+                    <source media="(max-width: 644px)" srcset="images/squares/pexels-tracehudson-2424391_square.jpg">
+                    <img src="images/pexels-tracehudson-2424391.jpg"
+                        alt="Empire State Building with lower Manhattan in the background">
+                </picture>
+                <figcaption>
+                    <a href="https://www.pexels.com/photo/empire-state-building-2424391/">Photo by
+                        Trace Hudson</a>
+                </figcaption>
+            </figure>
+            <div class="hero-desc">
+                <p class="tagline">The Empire State Building is an Art Deco skyscraper in Midtown Manhattan that once
+                    held the title of world’s tallest building.</p>
+            </div>
+        </section>
+
+        <div class="landmark-content">
+            <section class="landmark-about">
+                <h2>About</h2>
+                <p>
+                    <strong>Built:</strong>
+                    <br>
+                    Constructed in a record 1 year and 45 days from 1930–1931, the 102-story tower was designed by the
+                    firm Shreve, Lamb &amp; Harmon Associates and opened on May 1, 1931 with President Hoover pressing a
+                    button in Washington, D.C. that turned on the lights and opened the building.
+                </p>
+                <p>
+                    <strong>Today:</strong>
+                    <br>
+                    Its history, iconic silhouette, and observation decks make it a global tourist destination, and
+                    official city and national landmark. Millions of people visit it every year.
+                </p>
+                <div>
+                    <h3>More Info</h3>
+                    <ul>
+                        <li><a href="https://www.esbnyc.com/about/history" target="_blank" rel="noopener">Empire State
+                                Building Official Website</a></li>
+                        <li><a href="https://www.esbnyc.com/visit" target="_blank" rel="noopener">
+                                Visitor Info, Tickets, &amp; Directions</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Empire_State_Building" target="_blank"
+                                rel="noopener">Wikipedia: Empire State Building</a></li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="landmark-directions">
+                <h3 id="directions-title">Get Directions</h3>
+                <p>Use the observatory visitor entrance at 20 West 34th Street, between Fifth and Sixth avenues.</p>
+                <div class="mapWrapper ratio-16-9">
+                    <iframe title="Google Maps directions to Empire State Building"
+                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3022.617541157598!2d-73.9882393236219!3d40.748440471387724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building%2C%2020%20W%2034th%20St.%2C%20New%20York%2C%20NY%2010001!3m2!1d40.7484405!2d-73.98566439999999!5e0!3m2!1sen!2sus!4v1794722700519!5m2!1sen!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <ul>
+                    <li>
+                        <a class="directory-button"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Empire%20State%20Building%20Observatory%2C%2020%20West%2034th%20Street%2C%20New%20York%2C%20NY%2010001">Open
+                            in Google Maps</a>
+                    </li>
+                    <li>
+                        <a class="directory-button"
+                            href="https://maps.apple.com/directions?destination=Empire%20State%20Building%20Observatory%2C%2020%20West%2034th%20Street%2C%20New%20York%2C%20NY%2010001">Open
+                            in Apple Maps</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- // No additional images are available for this landmark //  -->
+        <!-- <section class="more-landmark-photos">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-kyle-miller-169884138-27462439_square.jpg"
+                            alt="A man walking away from the wonder wheel which is in full view.">
+                        <figcaption>
+                            <a href="https://www.pexels.com/photo/a-man-walking-past-a-ferris-wheel-27462439/">Photo
+                                by Kyle Miller
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-clement-proust-363898785-24730360_square.jpg"
+                            alt="Wonder wheel at sunset">
+                        <figcaption><a
+                                href="https://www.pexels.com/photo/denos-wonder-wheel-amusement-park-24730360/">Photo
+                                by Clément Proust</a></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-dimitry-mak-1310041547-30911091_square.jpg"
+                            alt="Night view of the Wonder Wheel lit with neon">
+                        <figcaption>
+                            <a
+                                href="https://www.pexels.com/photo/colorful-summer-day-at-coney-island-amusement-park-30911091/">Photo
+                                by Dimitry Mak
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section> -->
+
+        <nav id="pagination" aria-label="Landmark navigation">
+            <a class="btn" rel="prev" href="landmark-liberty.html">← Previous</a>
+            <a class="btn" rel="next" href="landmark-ferry.html">Next →</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Site by Thach To</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statue of Liberty</title>
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <header id="navbar">
+        <div class="navigation-bar">
+            <div class="site-title">
+                <a href="index.html" class="logo">NYC Landmarks</a>
+                <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="menu-button-text"></span>
+                </button>
+            </div>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-wonder.html">Wonder Wheel</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-liberty.html" aria-current="page">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landmark-intro">
+            <h1 class="hero-heading">Statue of Liberty</h1>
+            <figure class="hero-image">
+                <picture>
+                    <source media="(min-width: 645px)" srcset="images/pexels-mora-versio-2150673251-34091093.jpg">
+                    <source media="(max-width: 644px)"
+                        srcset="images/squares/pexels-mora-versio-2150673251-34091093_square.jpg">
+                    <img src="images/pexels-mora-versio-2150673251-34091093.jpg"
+                        alt="Statue of Liberty from below looking up at it">
+                </picture>
+                <figcaption>
+                    <a href="https://www.pexels.com/photo/statue-of-liberty-in-new-york-city-usa-34091093/">Photo by
+                        Mora Versio</a>
+                </figcaption>
+            </figure>
+            <div class="hero-desc">
+                <p class="tagline">The Statue of Liberty stands in New York Harbor as an enduring symbol of freedom and
+                    friendship between nations.</p>
+            </div>
+        </section>
+
+        <div class="landmark-content">
+            <section class="landmark-about">
+                <h2>About</h2>
+                <p>
+                    <strong>Built:</strong>
+                    <br>
+                    Built in France and dedicated in 1886, the statue was presented as a gift from the people of France
+                    to the United States. It was designed by Frédéric Auguste Bartholdi and engineered in part by
+                    Gustave Eiffel, then shipped in sections and re-assembled on what is now Liberty Island.
+                </p>
+                <p>
+                    <strong>Today:</strong>
+                    <br>
+                    Over time it became a meaningful landmark for both Americans and immigrants entering America through
+                    nearby Ellis Island. Today its location is a national park and it is open to a limited number of
+                    visitors. While immigrants no longer enter through Ellis Island, it remains a landmark and symbol of
+                    the United States.
+                </p>
+                <div>
+                    <h3>More Info</h3>
+                    <ul>
+                        <li><a href="https://www.cityexperiences.com/new-york/city-cruises/statue/" target="_blank"
+                                rel="noopener">Tickets</a></li>
+                        <li><a href="https://www.nps.gov/stli/" target="_blank" rel="noopener">National Park Service —
+                                Statue of Liberty Overview</a></li>
+                        <li><a href="https://www.nps.gov/stli/planyourvisit/directions.htm" target="_blank"
+                                rel="noopener">How To Get To Liberty Island &amp; Visit The Statue</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Statue_of_Liberty" target="_blank"
+                                rel="noopener">Wikipedia: Statue of Liberty</a></li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="landmark-directions">
+                <h3 id="directions-title">Get Directions</h3>
+                <p>For a visit starting in Manhattan, go to Castle Clinton in The Battery for the Statue City Cruises
+                    ferry
+                    to Liberty Island. The map links lead to the mainland departure area, not to the statue itself.</p>
+                <div class="mapWrapper ratio-16-9">
+                    <iframe title="Google Maps directions to Castle Clinton"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6602537934896!2d-74.01920612362366!3d40.70347957139492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a125d8ed33f%3A0x5e6e972422c6ef71!2sCastle%20Clinton%20National%20Monument%2C%20Battery%20Park%20-%20Liberty%20Island%2C%20New%20York%2C%20NY%2010004!5e0!3m2!1sen!2sus!4v1794721828057!5m2!1sen!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <ul>
+                    <li>
+                        <a class="directory-button"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Castle%20Clinton%20National%20Monument%2C%20The%20Battery%2C%20New%20York%2C%20NY">Open
+                            in Google Maps</a>
+                    </li>
+                    <li>
+                        <a class="directory-button"
+                            href="https://maps.apple.com/directions?destination=Castle%20Clinton%20National%20Monument%2C%20The%20Battery%2C%20New%20York%2C%20NY">Open
+                            in Apple Maps</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- // No additional images are available for this landmark //  -->
+        <!-- <section class="more-landmark-photos">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-kyle-miller-169884138-27462439_square.jpg"
+                            alt="A man walking away from the wonder wheel which is in full view.">
+                        <figcaption>
+                            <a href="https://www.pexels.com/photo/a-man-walking-past-a-ferris-wheel-27462439/">Photo
+                                by Kyle Miller
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-clement-proust-363898785-24730360_square.jpg"
+                            alt="Wonder wheel at sunset">
+                        <figcaption><a
+                                href="https://www.pexels.com/photo/denos-wonder-wheel-amusement-park-24730360/">Photo
+                                by Clément Proust</a></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="gallery-photo">
+                        <img src="images/squares/pexels-dimitry-mak-1310041547-30911091_square.jpg"
+                            alt="Night view of the Wonder Wheel lit with neon">
+                        <figcaption>
+                            <a
+                                href="https://www.pexels.com/photo/colorful-summer-day-at-coney-island-amusement-park-30911091/">Photo
+                                by Dimitry Mak
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section> -->
+
+        <nav id="pagination" aria-label="Landmark navigation">
+            <a class="btn" rel="prev" href="landmark-yankee.html">← Previous</a>
+            <a class="btn" rel="next" href="landmark-empire.html">Next →</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Site by Thach To</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
