@@ -44,10 +44,21 @@
   --space-32: calc(var(--space-unit) * 32);
 
   /* Layout Styles */
-  --page-width: 60rem;
+  --page-width: 75rem;
   --grid-gap: var(--space-3);
   --section-spacing: var(--space-6);
   --content-padding: var(--space-3);
+
+/* Navigation Styles */
+  --clr-nav: var(--button-text);
+  --clr-nav-hover: var(--alternate-button-text);
+  --clr-nav-hover-bg: var(--alternate-action);
+  --clr-nav-background: var(--action);
+  /* These change the easing of transitions, used on menu button */
+  --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1);/* ease in and out */
+  --ease-in: cubic-bezier(0.42, 0, 1, 1);/* ease in */
+  --ease-out: cubic-bezier(0, 0, 0.58, 1);/* ease out */
+  --ease-in-out: cubic-bezier(0.42, 0, 0.58, 1); /* ease in and out, more pronounced */
 }
 
 html {
@@ -180,7 +191,7 @@ button, .button {
   cursor: pointer;
 }
 
-button:hover, .button:hover {
+button:hover, button:hover {
   color: var(--button-text);
   background-color: var(--action-hover);
 }
@@ -188,4 +199,7 @@ button:hover, .button:hover {
 a:focus-visible, button:focus-visible {
   outline: 2px solid var(--alternate-action);
 } 
+
+
+
 

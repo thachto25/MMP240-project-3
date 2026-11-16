@@ -100,7 +100,7 @@ figure {
   background-color: var(--primary-background);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--space-1);
-  font-size: var(--text-size-sm);
+  font-size: var(--text-size-md);
 }
 
 .card-title {
@@ -109,6 +109,14 @@ figure {
   font-size: var(--text-size-md);
 }
 
+.card .hyperlink{
+  text-decoration: none;
+  color: var(--alternate-action);
+}
+
+.hyperlink:hover{
+  color: var(--alternate-background);
+}
 /* ======================
 Media Queries
 ========================= */
@@ -124,7 +132,7 @@ Media Queries
 
   .introduction {
     display: grid;
-    grid-template-columns: 60% 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--space-6);
   }
 
@@ -151,9 +159,6 @@ Media Queries
     gap: var(--space-6);
   }
 
-  .intro-title{
-    grid-area: 1 / 1 / 2 / 3;
-  }
 
 }/*   end min-width 1200 */
 
@@ -199,7 +204,7 @@ Individual Landmark Page
   background-color: var(--primary-background);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--space-1);
-  font-size: var(--text-size-sm);
+  font-size: var(--text-size-md);
   color: var(--action);
 }
 
@@ -238,7 +243,7 @@ Landmark About
   background-color: var(--action);
   color: var(--button-text);
   text-align: center;
-  font-size: var(--text-size-sm);
+  font-size: var(--text-size-md);
 }
 
 .mapWrapper {
@@ -287,7 +292,7 @@ Gallery
   background-color: var(--primary-background);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--space-1);
-  font-size: var(--text-size-sm);
+  font-size: var(--text-size-md);
   color: var(--action);
 }
 
@@ -306,7 +311,7 @@ Page Navigation
   border-radius: var(--space-2);
   background-color: var(--action);
   color: var(--button-text);
-  font-size: var(--text-size-sm);
+  font-size: var(--text-size-md);
   text-decoration: none;
 }
 
@@ -328,23 +333,192 @@ Quicklink btn
   text-decoration: none;
 }
 
-.quicklink-button{
-  display: block;
-  border-radius: var(--space-6);
-  padding: var(--space-3) var(--space-4);
-  background-color: var(--action);
-  text-align: center;
-  font-size: var(--text-size-sm);
-  color: var(--button-text);
-}
-
 .intro-text{
   display: flex;
   flex-direction: column;
 }
-
-/* pushing btn to the bottom  */
-.intro-text .intro{
-  flex-grow: 2;
+.quicklink-button{
+  display: block;
+  border-radius: var(--space-6);
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--action);
+  text-align: center;
+  font-size: var(--text-size-md);
+  color: var(--button-text);
 }
 
+.home-btn{
+  display: flex; 
+  flex-direction: row-reverse;
+}
+
+/* --------------------------
+    Navigation Styles
+------------------------------ */
+header{
+  background: var(--clr-nav-background);
+  color: var(--clr-nav);
+}
+
+@media (max-width: 900px) {
+  #navbar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+  }
+}
+
+.navigation-bar .site-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+}
+
+.navigation-bar > .site-title{
+  font-family: var(--headings-family);
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--clr-nav);
+  /* You will need to add the font styling (size, color etc) here */
+}
+
+/* Menu/Close button */
+.menu-button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: var(--space-2) var(--space-4);
+  color: var(--clr-nav);
+  font-size: var(--text-size-lg);
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 200ms var(--ease-standard);
+}
+
+.menu-button:hover {
+  opacity: 0.8;
+  background: var(--clr-nav-hover-bg);
+  color: var(--clr-nav-hover);
+}
+
+
+/* Toggle text: "Menu" → "Close" */
+.menu-button-text::before {
+  content: "Menu";
+}
+
+.menu-button[aria-expanded="true"] .menu-button-text::before {
+  content: "Close";
+}
+
+/* Nav (below topbar) */
+nav.primary{
+  background: var(--clr-nav-background);
+}
+
+/* Collapsed menu by default */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  /* Smooth collapse/expand with gentle fade */
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 520ms var(--ease-in-out),
+    opacity 260ms var(--ease-in-out);
+}
+
+/* Expanded state (JS toggles .is-open on the UL) */
+.menu.is-open {
+  max-height: 80vh;
+  opacity: 1;
+}
+
+/* Vertical, full-width items */
+.menu li + li {
+  border-top: 2px solid var(--highlight-color);
+}
+
+.menu a {
+  display: block;
+  padding: var(--space-4);
+  text-align: center;
+  color: var(--clr-nav);
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  background: var(--clr-nav-hover-bg);
+  color: var(--clr-nav-hover);
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu { transition: none; }
+}
+
+/* Desktop: horizontal layout, inline logo & nav */
+@media (min-width: 1240px) {
+  /* Header becomes horizontal flex container */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+  } 
+ /* Hide the topbar wrapper since header is now flex */
+  .navigation-bar {
+    display: contents; /* children become direct flex items of header */
+  }
+
+  /* Hide hamburger button */
+  .menu-button {
+    display: none;
+  }
+
+  /* Nav aligns with header */
+  nav {
+    background: transparent;
+  }
+
+  /* Always show menu, horizontal layout */
+  .menu {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    transition: none;
+    
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  /* Remove vertical borders */
+  .menu li + li {
+    border-top: none;
+  }
+
+  /* Button-like nav items with centered text */
+  .menu a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-align: center;
+    transition: 
+    background 180ms var(--ease-standard),
+     color 180ms var(--ease-standard);
+  }
+
+  .menu a:hover,
+  .menu a:focus-visible {
+    background: var(--clr-nav-hover-bg);
+    color: var(--clr-nav-hover);
+  }
+}
